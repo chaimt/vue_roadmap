@@ -8,10 +8,18 @@
                 v-model="repository"
                 class="col-md-2 col-md-offset-5"
         >
+        <b-dropdown id="ddProfile"
+                    name="ddProfile"
+                    v-model="ddProfileVm.ddSelectedOption"
+                    text="Select Item"
+                    variant="primary"
+                    class="m-md-2" v-on:change="changeItem"
+        />
       </div>
     </form>
     <div class="alert alert-info" v-show="loading">Loading...</div>
     <div class="alert alert-danger" v-show="errored">An error occured</div>
+<!--    <span>Selected: {{ ddProfile.ddSelectedOption }}</span>-->
     <chart :issues="issues"></chart>
   </div>
 </template>
@@ -31,10 +39,42 @@
         errored: false,
         issues: [],
         repository: "",
-        startDate: null
+        startDate: null,
+        ddProfileVm: {
+          originalValue: [],
+          ddSelectedOption: "Profiles",
+          disabled: false,
+          readonly: false,
+          visible: true,
+          color: "",
+          options: [
+            {
+              "value": "tree_profile.json",
+              "text": "Profiles"
+            },
+            {
+              "value": "tree_profile_application.json",
+              "text": "Profile Application"
+            },
+            {
+              "value": "tree_seniority.json",
+              "text": "Seniority Profile"
+            }
+          ]
+        }
       };
     },
     methods: {
+      changeItem: async function () {
+        //grab some remote data
+        try {
+          let response = await this.$http.get('https://www.example.com/api/' + this.ddTestVm.ddTestSelectedOption + '.json');
+          console.log(response.data);
+          this.someOtherProperty = response.data;
+        } catch (error) {
+          console.log(error)
+        }
+      },
       getDateRange() {
         const startDate = moment().subtract(6, "days");
         const endDate = moment();
