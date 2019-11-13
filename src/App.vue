@@ -13,13 +13,21 @@
                     v-model="ddProfileVm.ddSelectedOption"
                     text="Select Item"
                     variant="primary"
-                    class="m-md-2" v-on:change="changeItem"
-        />
+                    class="m-md-2" v-on:change="changeItem">
+          <b-dropdown-item disabled value="0">Select an Item</b-dropdown-item>
+          <b-dropdown-item v-for="option in ddProfileVm.options"
+                           :key="option.value"
+                           :value="option.value"
+                           @click="ddProfileVm.ddSelectedOption = option.value">
+            {{option.text}}
+          </b-dropdown-item>
+        </b-dropdown>
+        <span>Selected: {{ ddProfileVm.ddSelectedOption }}</span>
+
       </div>
     </form>
     <div class="alert alert-info" v-show="loading">Loading...</div>
     <div class="alert alert-danger" v-show="errored">An error occured</div>
-<!--    <span>Selected: {{ ddProfile.ddSelectedOption }}</span>-->
     <chart :issues="issues"></chart>
   </div>
 </template>
