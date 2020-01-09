@@ -1,0 +1,72 @@
+{
+  "id": "application",
+  "children": [
+    {
+      "id": "languages",
+      "tooltip": "Pick a language",
+      "order": "1",
+      "children": [
+        {
+          "id": "build_systems",
+          "order": "2",
+          "tooltip": "Learn how to use package manager",
+          "children": [
+            {
+              "id": "maven",
+              "children": [
+                {
+                  "id": "maven_exercise"
+                }
+              ]
+            },
+            {
+              "id": "gradle",
+              "children": [
+                {
+                  "id": "gradle_exercise"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "best_practices",
+          "order": "3",
+          "children": [
+            {
+              "id": "testing"
+            },
+            {
+              "id": "testing_exercise"
+            }
+          ]
+        },
+        {
+          "id": "database",
+          "order": "4",
+          "children": [
+            {
+              "id": "relational_exercise"
+            }
+          ]
+        },
+        {
+          "id": "queue",
+          "order": "7",
+          "children": [
+            {
+              "id": "queue_exercise"
+            },
+            {
+              "id": "kafka",
+              "order": "9"
+            },
+            {
+              "id": "pulsar"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

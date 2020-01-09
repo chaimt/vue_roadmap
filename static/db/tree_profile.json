@@ -1,0 +1,250 @@
+{
+  "id": "backend",
+  "children": [
+    {
+      "id": "application",
+      "children": [
+        {
+          "id": "paradigma",
+          "color": "red",
+          "children": [
+            {
+              "id": "imperative",
+              "children": [
+                {
+                  "id": "object_oriented"
+                }
+              ]
+            },
+            {
+              "id": "declarative",
+              "children": [
+                {
+                  "id": "functional"
+                },
+                {
+                  "id": "regex"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "build_systems",
+          "children": [
+            {
+              "id": "maven"
+            },
+            {
+              "id": "gradle"
+            },
+            {
+              "id": "sbt"
+            },
+            {
+              "id": "mpn"
+            }
+          ]
+        },
+        {
+          "id": "spring",
+          "children": [
+            {
+              "id": "spring_batch"
+            },
+            {
+              "id": "spring_cache"
+            },
+            {
+              "id": "spring_mvc"
+            }
+          ]
+        },
+        {
+          "id": "hibernate"
+        },
+        {
+          "id": "database",
+          "children": [
+            {
+              "id": "sql"
+            },
+            {
+              "id": "stored_proc"
+            },
+            {
+              "id": "indexes"
+            },
+            {
+              "id": "foreign_tables"
+            },
+            {
+              "id": "db_types",
+              "children": [
+                {
+                  "id": "postgress"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "distributed",
+      "children": [
+        {
+          "id": "java",
+          "children": [
+            {
+              "id": "rx_java"
+            },
+            {
+              "id": "multithread_java"
+            }
+          ]
+        },
+        {
+          "id": "node"
+        },
+        {
+          "id": "go"
+        },
+        {
+          "id": "python"
+        },
+        {
+          "id": "spring",
+          "children": [
+            {
+              "id": "spring_reactive"
+            },
+            {
+              "id": "spring_actuator"
+            }
+          ]
+        },
+        {
+          "id": "vertx"
+        },
+        {
+          "id": "database",
+          "children": [
+            {
+              "id": "mongodb"
+            },
+            {
+              "id": "elastic"
+            },
+            {
+              "id": "redis"
+            }
+          ]
+        },
+        {
+          "id": "queue",
+          "children": [
+            {
+              "id": "activemq"
+            },
+            {
+              "id": "kafka"
+            },
+            {
+              "id": "pulsar"
+            },
+            {
+              "id": "sns"
+            },
+            {
+              "id": "kinesis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bigData",
+      "name": "BigData",
+      "children": [
+        {
+          "id": "datalake",
+          "children": [
+            {
+              "id": "file_format",
+              "children": [
+                {
+                  "id": "file_json"
+                },
+                {
+                  "id": "file_csv"
+                },
+                {
+                  "id": "file_avro"
+                },
+                {
+                  "id": "file_parquet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "db_types",
+          "children": [
+            {
+              "id": "columndb",
+              "children": [
+                {
+                  "id": "opensource_db",
+                  "children": [
+                    {
+                      "id": "cassandra"
+                    }
+                  ]
+                },
+                {
+                  "id": "google_db",
+                  "children": [
+                    {
+                      "id": "bigquery"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "data_processing",
+          "children": [
+            {
+              "id": "spark",
+              "children": [
+                {
+                  "id": "spark_batch"
+                },
+                {
+                  "id": "spark_streaming"
+                }
+              ]
+            },
+            {
+              "id": "flink"
+            },
+            {
+              "id": "beam"
+            },
+            {
+              "id": "storm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social_skills",
+      "name": "Social Skills"
+    }
+  ]
+}

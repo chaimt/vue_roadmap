@@ -1,0 +1,409 @@
+{
+  "children": [
+    {
+      "id": "backend",
+      "name": "Backend",
+      "tooltip": "Backend group",
+      "description": "<a href=\"http://en.wikipedia.org/wiki/John_Fife\">Reverend John Fife</a> was instrumental in co-founding the <a href=\"http://en.wikipedia.org/wiki/Sanctuary_movement\">Sanctuary</a> movement. He is also active in humanitarian work along the US/Mexico border through <a />Humane Borders</a>.",
+      "date": "2012-05-05 23:50:11",
+      "relevance": 2,
+      "tags": []
+    },
+    {
+      "id": "profiles",
+      "name": "Profiles",
+      "children": [
+        {
+          "id": "application",
+          "name": "Application"
+        },
+        {
+          "id": "distributed",
+          "name": "Distributed"
+        }
+      ]
+    },
+    {
+      "id": "paradigma",
+      "name": "Paradigma",
+      "children": [
+        {
+          "id": "imperative",
+          "name": "Imperative",
+          "children": []
+        },
+        {
+          "id": "declarative",
+          "name": "Declarative",
+          "children": [
+            {
+              "id": "regex",
+              "name": "RegEx"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "object_oriented",
+      "name": "Object Oriented"
+    },
+    {
+      "id": "functional",
+      "name": "Functional"
+    },
+    {
+      "id": "hibernate",
+      "name": "Hibernate",
+      "size": 3812
+    },
+    {
+      "id": "languages",
+      "name": "Languages",
+      "children": [
+        {
+          "id": "java",
+          "name": "Java"
+        },
+        {
+          "id": "node",
+          "name": "Node"
+        },
+        {
+          "id": "go",
+          "name": "GO"
+        },
+        {
+          "id": "python",
+          "name": "Python"
+        }
+      ]
+    },
+    {
+      "id": "rx_java",
+      "name": "RX Java"
+    },
+    {
+      "id": "multithread_java",
+      "name": "MultiThreading"
+    },
+    {
+      "id": "vertx",
+      "name": "Vertx"
+    },
+    {
+      "id": "elastic",
+      "name": "Elastic Search",
+      "size": 3812
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "size": 3812
+    },
+    {
+      "id": "datalake",
+      "name": "Data Lake"
+    },
+    {
+      "id": "bigquery",
+      "name": "BigQuery",
+      "size": 3812
+    },
+    {
+      "id": "flink",
+      "name": "Flink"
+    },
+    {
+      "id": "beam",
+      "name": "Beam"
+    },
+    {
+      "id": "storm",
+      "name": "Storm"
+    },
+    {
+      "id": "file_format",
+      "name": "File Formats",
+      "children": [
+        {
+          "id": "file_json",
+          "name": "json"
+        },
+        {
+          "id": "file_csv",
+          "name": "csv"
+        },
+        {
+          "id": "file_avro",
+          "name": "avro"
+        },
+        {
+          "id": "file_parquet",
+          "name": "parquet"
+        }
+      ]
+    },
+    {
+      "id": "spring",
+      "name": "Spring",
+      "children": [
+        {
+          "id": "spring_reactive",
+          "name": "Reactor",
+          "relevance": 2
+        },
+        {
+          "id": "spring_actuator",
+          "name": "Actuator"
+        },
+        {
+          "id": "spring_batch",
+          "name": "Batch",
+          "size": 3812,
+          "tooltip": "A lightweight, comprehensive batch framework designed to enable the development of robust batch applications vital for the daily operations of enterprise systems.",
+          "links": [
+            {
+              "name": "spring-batch",
+              "ref": "https://spring.io/projects/spring-batch"
+            }
+          ]
+        },
+        {
+          "id": "spring_cache",
+          "name": "Cache",
+          "size": 3812
+        },
+        {
+          "id": "spring_mvc",
+          "name": "MVC"
+        }
+      ]
+    },
+    {
+      "id": "build_systems",
+      "name": "Build Systems",
+      "children": [
+        {
+          "id": "maven",
+          "name": "Maven",
+          "tooltip": "Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information",
+          "links": [
+            {
+              "name": "maven",
+              "ref": "https://maven.apache.org/"
+            },
+            {
+              "name": "overview",
+              "ref": "https://www.tutorialspoint.com/maven/maven_overview.htm"
+            }
+          ],
+          "children": [
+            {
+              "id": "maven_exercise",
+              "name": "Maven Exercise",
+              "type": "exercise",
+              "description": "<p><ul>\n<li>Build tool that also tries to do many other things (like manage web sites)</li>\n<li>Favors convention (with configuration) over explicit rules\n<ul>\n<li>\"Build me a jar out of stuff in src/main/java\" vs</li>\n<li>\"Run&nbsp;<code>javac</code>&nbsp;if these files change, then run&nbsp;<code>jar cf foo.jar</code>\"</li>\n</ul>\n</li>\n<li>Based on a plugin architecture to allow extensibility</li>\n<li>Executes a series of build phases (\"lifecycle stages\")</li>\n</ul></p>"
+            }
+          ]
+        },
+        {
+          "id": "gradle",
+          "name": "Gradle",
+          "tooltip": "From mobile apps to microservices, from small startups to big enterprises, Gradle helps teams build, automate and deliver better software, faster.",
+          "links": [
+            {
+              "name": "gradle",
+              "ref": "https://gradle.org/"
+            }
+          ],
+          "children": [
+            {
+              "id": "gradle_exercise",
+              "name": "Gradle Exercise",
+              "type": "exercise",
+              "description": "<p><ul>\n<li>Build tool that also tries to do many other things (like manage web sites)</li>\n<li>Favors convention (with configuration) over explicit rules\n<ul>\n<li>\"Build me a jar out of stuff in src/main/java\" vs</li>\n<li>\"Run&nbsp;<code>javac</code>&nbsp;if these files change, then run&nbsp;<code>jar cf foo.jar</code>\"</li>\n</ul>\n</li>\n<li>Based on a plugin architecture to allow extensibility</li>\n<li>Executes a series of build phases (\"lifecycle stages\")</li>\n</ul></p>"
+            }
+          ]
+        },
+        {
+          "id": "sbt",
+          "name": "SBT"
+        },
+        {
+          "id": "mpn",
+          "name": "MPN",
+          "tooltip": "Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code",
+          "links": [
+            {
+              "name": "npmjs",
+              "ref": "https://www.npmjs.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "caching",
+      "name": "Caching",
+      "children": [
+        {
+          "id": "redis",
+          "name": "Redis"
+        },
+        {
+          "id": "memcached",
+          "name": "Memcached"
+        }
+      ]
+    },
+    {
+      "id": "database",
+      "name": "Database",
+      "children": [
+        {
+          "id": "postgress",
+          "name": "Postgress",
+          "size": 3812
+        },
+        {
+          "id": "db_types",
+          "name": "DB Types"
+        },
+        {
+          "id": "mongodb",
+          "name": "MongoDB",
+          "size": 3812
+        },
+        {
+          "id": "relational",
+          "name": "Relational DB",
+          "children": [
+            {
+              "id": "sql",
+              "name": "SQL",
+              "size": 3812
+            },
+            {
+              "id": "stored_proc",
+              "name": "Stored Proc",
+              "size": 3812
+            },
+            {
+              "id": "indexes",
+              "name": "Indexes",
+              "size": 3812
+            },
+            {
+              "id": "foreign_tables",
+              "name": "Foreign Tables",
+              "size": 3812
+            },
+            {
+              "id": "relational_exercise",
+              "name": "Relational Exercise",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "id": "columndb",
+          "name": "Column DB",
+          "children": [
+            {
+              "id": "cassandra",
+              "name": "Cassandra",
+              "size": 3812
+            }
+          ]
+        },
+        {
+          "id": "opensource_db",
+          "name": "Opensource DB"
+        },
+        {
+          "id": "google_db",
+          "name": "Google DB"
+        }
+      ]
+    },
+    {
+      "id": "queue",
+      "name": "Queues",
+      "children": [
+        {
+          "id": "queue_exercise",
+          "name": "Queue Exercise",
+          "type": "exercise"
+        },
+        {
+          "id": "activemq",
+          "name": "Active MQ"
+        },
+        {
+          "id": "kafka",
+          "name": "Kafka"
+        },
+        {
+          "id": "pulsar",
+          "name": "Pulsar"
+        },
+        {
+          "id": "sns",
+          "name": "SNS"
+        },
+        {
+          "id": "kinesis",
+          "name": "kinesis"
+        }
+      ]
+    },
+    {
+      "id": "data_processing",
+      "name": "Data Processing"
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "children": [
+        {
+          "id": "spark_batch",
+          "name": "Spark Batch"
+        },
+        {
+          "id": "spark_streaming",
+          "name": "Spark Streaming"
+        }
+      ]
+    },
+    {
+      "id": "junior",
+      "name": "Junior"
+    },
+    {
+      "id": "senior",
+      "name": "Senior"
+    },
+    {
+      "id": "architect",
+      "name": "Architect"
+    },
+    {
+      "id": "best_practices",
+      "name": "Best Practices",
+      "tooltip": "Software best practices"
+    },
+    {
+      "id": "testing",
+      "name": "Testing"
+    },
+    {
+      "id": "testing_exercise",
+      "name": "Testing Exercise",
+      "type": "exercise",
+      "description": "<p><ul>\n<li>Build tool that also tries to do many other things (like manage web sites)</li>\n<li>Favors convention (with configuration) over explicit rules\n<ul>\n<li>\"Build me a jar out of stuff in src/main/java\" vs</li>\n<li>\"Run&nbsp;<code>javac</code>&nbsp;if these files change, then run&nbsp;<code>jar cf foo.jar</code>\"</li>\n</ul>\n</li>\n<li>Based on a plugin architecture to allow extensibility</li>\n<li>Executes a series of build phases (\"lifecycle stages\")</li>\n</ul></p>"
+    }
+
+
+  ]
+}
